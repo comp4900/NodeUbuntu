@@ -22,9 +22,9 @@ app.post('/', function(req, res) {
 
 });
 
-http.listen(3000, "0.0.0.0");
+http.listen(80);
 
-console.log('listening on *:3000');
+console.log('listening on *:80');
 
 /*
 
