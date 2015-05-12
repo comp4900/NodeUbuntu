@@ -1,0 +1,144 @@
+			.headers {
+				position: relative;
+			}
+
+			.rankings {
+				position: relative;
+			}
+
+			.headers > .col-1-header {
+				position: absolute;
+				left: 0px;
+			}
+
+			.headers > .col-2-header {
+				position: absolute;
+				left: 250px;
+			}
+
+			.headers > .col-3-header {
+				position: absolute;
+				left: 500px;
+			}
+
+			.headers > .col-4-header {
+				position: absolute;
+				left: 750px;
+			}
+
+			.headers > .col-5-header {
+				position: absolute;
+				left: 1000px;
+			}
+
+			.headers > .col-6-header {
+				position: absolute;
+				left: 1250px;
+			}
+
+			.headers > .col-7-header {
+				position: absolute;
+				left: 1500px;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			th, td {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 2px;
+				padding-right: 2px;
+				text-align: left;   
+			}
+
+
+			table {
+				font-size: 100%;
+				font-family: monospace;
+				width: 250px;
+				line-height: 7px;
+			}
+
+			.heat-number{
+				width: 15px;
+				max-width: 15px;
+				text-align: center;
+			}
+
+			.name{
+				width: 70px;
+				max-width: 70px;
+				height: 18px;
+			}
+
+			.place{
+				width: 20px;
+				max-width: 20px;
+				text-align: center;
+			}
+
+
+
+			.col-1 {
+				position: absolute;
+				top: 30px;
+				left: 0px;    		
+			}
+
+			
+			.col-2 {
+				position: absolute;
+				top: 30px;
+				left: 250px;    		
+
+			}
+
+			.col-3 {
+				position: absolute;
+				top: 30px;
+				left: 500px; 
+			}
+
+
+			.col-4 {
+				position: absolute;
+				top: 30px;
+				left: 750px; 
+			}
+
+
+			.col-5 {
+				position: absolute;
+				top: 30px;
+				left: 1000px;    	
+
+			}
+
+
+			.col-6 {
+				position: absolute;
+				top: 30px;
+				left: 1250px;  
+
+
+			}
+			.col-6 > .top-table {
+				margin-top: 574.5px;
+			}
+
+			.seed-col {
+				width: 2.4em;
+			}
+
+/*
+	- The height of the page will be defined by the number of heats in the first column.
+	- The column furthest to the right takes this height, divides it by half, and obtains the top margin that places it in the middle.
+	- The column second to the right takes the final column's margin, divides it by half, and utilizes that as the margins.
+	- The third does the same and so on until the 2nd column to the left.
+		- THIS IS HOW IT WORKS WITH 4 MAN HEATS. 6 MAN MIGHT BE DIFFERENT.
+
+
+*/

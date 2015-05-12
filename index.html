@@ -1,20 +1,769 @@
 <html>
-<head></head>
-
-<html>
-<head></head>
-
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" type="text/css" href="bracket.css">
+</head>
 <body>
-  <div id="message">hi</div>
+    <div id="update">
+        <div class="headers">
+            <table class="col-1-header">
+                <tr>
+                    <th class="seed-col">Seed</th>
+                    <th colspan="5">Round 1 (64)</th>
+                </tr>
+            </table>
+            <table class="col-2-header">
+                <tr>
+                    <th colspan="5">Round 2 (32)</th>
+                </tr>
+            </table>
+            <table class="col-3-header">
+                <tr>
+                    <th colspan="5">Quarter-Finals (16)</th>
+                </tr>
+            </table>
+            <table class="col-4-header">
+                <tr>
+                    <th colspan="5">Semi-Finals (8)</th>
+                </tr>
+            </table>
+            <table class="col-5-header">
+                <tr>
+                    <th colspan="5">Consi + Final (8)</th>
+                </tr>
+            </table>
+        </div>
+        <div class="rankings">
+            <div class="col-1">
+                <table id="col-1-heat-1" class="top-table">
+                    <tr>
+                        <td id="1-1" class="seed-col">1</td>
+                        <td class="heat-number" rowspan="4">1</td>
+                        <td class="name" id="1-1-n" colspan="3">Brennan Bast</td>
+                        <td class="place" id="1-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="1-2" class="seed-col">32</td>
+                        <td class="name" id="1-2-n" colspan="3">Stephen Davis</td>
+                        <td class="place" id="1-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="1-3" class="seed-col">33</td>
+                        <td class="name" id="1-3-n" colspan="3">Luca Coleman</td>
+                        <td class="place" id="1-3-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="1-4" class="seed-col">
+                        </td>
+                        <td class="name" id="1-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="1-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-2">
+                    <tr>
+                        <td id="2-1" class="seed-col">16</td>
+                        <td class="heat-number" rowspan="4">2</td>
+                        <td class="name" id="2-1-n" colspan="3">Matt Boortman</td>
+                        <td class="place" id="2-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="2-2" class="seed-col">17</td>
+                        <td class="name" id="2-2-n" colspan="3">Anton Lindén</td>
+                        <td class="place" id="2-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="2-3" class="seed-col">48</td>
+                        <td class="name" id="2-3-n" colspan="3">Brandon Tissen</td>
+                        <td class="place" id="2-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="2-4" class="seed-col">49</td>
+                        <td class="name" id="2-4-n" colspan="3">Magaly McWhinnie</td>
+                        <td class="place" id="2-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-3">
+                    <tr>
+                        <td id="3-1" class="seed-col">9</td>
+                        <td class="heat-number" rowspan="4">3</td>
+                        <td class="name" id="3-1-n" colspan="3">Tony Graves</td>
+                        <td class="place" id="3-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="3-2" class="seed-col">24</td>
+                        <td class="name" id="3-2-n" colspan="3">Sam Dalton</td>
+                        <td class="place" id="3-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="3-3" class="seed-col">41</td>
+                        <td class="name" id="3-3-n" colspan="3">P Barbosa</td>
+                        <td class="place" id="3-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="3-4" class="seed-col">56</td>
+                        <td class="name" id="3-4-n" colspan="3">Nick Johnstone</td>
+                        <td class="place" id="3-4-p">DNF</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-4">
+                    <tr>
+                        <td id="4-1" class="seed-col">8</td>
+                        <td class="heat-number" rowspan="4">4</td>
+                        <td class="name" id="4-1-n" colspan="3">Troy Pembeton</td>
+                        <td class="place" id="4-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="4-2" class="seed-col">25</td>
+                        <td class="name" id="4-2-n" colspan="3">Nicholas Rosa</td>
+                        <td class="place" id="4-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="4-3" class="seed-col">40</td>
+                        <td class="name" id="4-3-n" colspan="3">Lukas Nürnberger</td>
+                        <td class="place" id="4-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="4-4" class="seed-col">
+                        </td>
+                        <td class="name" id="4-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="4-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-5">
+                    <tr>
+                        <td id="5-1" class="seed-col">5</td>
+                        <td class="heat-number" rowspan="4">5</td>
+                        <td class="name" id="5-1-n" colspan="3">Robert McWhinnie</td>
+                        <td class="place" id="5-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="5-2" class="seed-col">28</td>
+                        <td class="name" id="5-2-n" colspan="3">Devon Scarborough</td>
+                        <td class="place" id="5-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="5-3" class="seed-col">37</td>
+                        <td class="name" id="5-3-n" colspan="3">Gerard Dombroski</td>
+                        <td class="place" id="5-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="5-4" class="seed-col">
+                        </td>
+                        <td class="name" id="5-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="5-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-6">
+                    <tr>
+                        <td id="6-1" class="seed-col">12</td>
+                        <td class="heat-number" rowspan="4">6</td>
+                        <td class="name" id="6-1-n" colspan="3">Merrick Wildash</td>
+                        <td class="place" id="6-1-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="6-2" class="seed-col">21</td>
+                        <td class="name" id="6-2-n" colspan="3">Luke Job</td>
+                        <td class="place" id="6-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="6-3" class="seed-col">44</td>
+                        <td class="name" id="6-3-n" colspan="3">Daniel Guzzardi</td>
+                        <td class="place" id="6-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="6-4" class="seed-col">53</td>
+                        <td class="name" id="6-4-n" colspan="3">Elissa Mah</td>
+                        <td class="place" id="6-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-7">
+                    <tr>
+                        <td id="7-1" class="seed-col">13</td>
+                        <td class="heat-number" rowspan="4">7</td>
+                        <td class="name" id="7-1-n" colspan="3">Winston Fox</td>
+                        <td class="place" id="7-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="7-2" class="seed-col">20</td>
+                        <td class="name" id="7-2-n" colspan="3">Cameron Hancock</td>
+                        <td class="place" id="7-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="7-3" class="seed-col">52</td>
+                        <td class="name" id="7-3-n" colspan="3">Eddie Spearing</td>
+                        <td class="place" id="7-3-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="7-4" class="seed-col">45</td>
+                        <td class="name" id="7-4-n" colspan="3">Jaydon Howarth</td>
+                        <td class="place" id="7-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-8">
+                    <tr>
+                        <td id="8-1" class="seed-col">4</td>
+                        <td class="heat-number" rowspan="4">8</td>
+                        <td class="name" id="8-1-n" colspan="3">Connor Ferguson</td>
+                        <td class="place" id="8-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="8-2" class="seed-col">36</td>
+                        <td class="name" id="8-2-n" colspan="3">Clive James Robbins</td>
+                        <td class="place" id="8-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="8-3" class="seed-col">29</td>
+                        <td class="name" id="8-3-n" colspan="3">Jack Tumai</td>
+                        <td class="place" id="8-3-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="8-4" class="seed-col">
+                        </td>
+                        <td class="name" id="8-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="8-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-9">
+                    <tr>
+                        <td id="9-1" class="seed-col">3</td>
+                        <td class="heat-number" rowspan="4">9</td>
+                        <td class="name" id="9-1-n" colspan="3">Callum Mathieson</td>
+                        <td class="place" id="9-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="9-2" class="seed-col">30</td>
+                        <td class="name" id="9-2-n" colspan="3">Philip Cumming</td>
+                        <td class="place" id="9-2-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="9-3" class="seed-col">35</td>
+                        <td class="name" id="9-3-n" colspan="3">Paddy Howard</td>
+                        <td class="place" id="9-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="9-4" class="seed-col">
+                        </td>
+                        <td class="name" id="9-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="9-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-10">
+                    <tr>
+                        <td id="10-1" class="seed-col">19</td>
+                        <td class="heat-number" rowspan="4">10</td>
+                        <td class="name" id="10-1-n" colspan="3">Kaimana Pinto</td>
+                        <td class="place" id="10-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="10-2" class="seed-col">46</td>
+                        <td class="name" id="10-2-n" colspan="3">Byron Essert</td>
+                        <td class="place" id="10-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="10-3" class="seed-col">51</td>
+                        <td class="name" id="10-3-n" colspan="3">Daniel Hawes</td>
+                        <td class="place" id="10-3-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="10-4" class="seed-col">14</td>
+                        <td class="name" id="10-4-n" colspan="3">Boogie Banks</td>
+                        <td class="place" id="10-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-11">
+                    <tr>
+                        <td id="11-1" class="seed-col">22</td>
+                        <td class="heat-number" rowspan="4">11</td>
+                        <td class="name" id="11-1-n" colspan="3">Lawrence Thompson</td>
+                        <td class="place" id="11-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="11-2" class="seed-col">43</td>
+                        <td class="name" id="11-2-n" colspan="3">Max Gordy</td>
+                        <td class="place" id="11-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="11-3" class="seed-col">11</td>
+                        <td class="name" id="11-3-n" colspan="3">Dan Waterhouse</td>
+                        <td class="place" id="11-3-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="11-4" class="seed-col">54</td>
+                        <td class="name" id="11-4-n" colspan="3">Kelsey Nakanelua</td>
+                        <td class="place" id="11-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-12">
+                    <tr>
+                        <td id="12-1" class="seed-col">6</td>
+                        <td class="heat-number" rowspan="4">12</td>
+                        <td class="name" id="12-1-n" colspan="3">Mitch Thompson</td>
+                        <td class="place" id="12-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="12-2" class="seed-col">38</td>
+                        <td class="name" id="12-2-n" colspan="3">Janne Lehtinen</td>
+                        <td class="place" id="12-2-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td id="12-3" class="seed-col">27</td>
+                        <td class="name" id="12-3-n" colspan="3">Jules Hornung</td>
+                        <td class="place" id="12-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="12-4" class="seed-col">
+                        </td>
+                        <td class="name" id="12-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="12-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-13">
+                    <tr>
+                        <td id="13-1" class="seed-col">7</td>
+                        <td class="heat-number" rowspan="4">13</td>
+                        <td class="name" id="13-1-n" colspan="3">Dejan Djukic</td>
+                        <td class="place" id="13-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="13-2" class="seed-col">26</td>
+                        <td class="name" id="13-2-n" colspan="3">Callum O'Callaghan</td>
+                        <td class="place" id="13-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="13-3" class="seed-col">39</td>
+                        <td class="name" id="13-3-n" colspan="3">Andrew MacKay</td>
+                        <td class="place" id="13-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="13-4" class="seed-col">
+                        </td>
+                        <td class="name" id="13-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="13-4-p">
+                        </td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-14">
+                    <tr>
+                        <td id="14-1" class="seed-col">10</td>
+                        <td class="heat-number" rowspan="4">14</td>
+                        <td class="name" id="14-1-n" colspan="3">Jimmy Riha</td>
+                        <td class="place" id="14-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="14-2" class="seed-col">23</td>
+                        <td class="name" id="14-2-n" colspan="3">Tyler Howell</td>
+                        <td class="place" id="14-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="14-3" class="seed-col">42</td>
+                        <td class="name" id="14-3-n" colspan="3">Aj Cox</td>
+                        <td class="place" id="14-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="14-4" class="seed-col">55</td>
+                        <td class="name" id="14-4-n" colspan="3">Ling Lee</td>
+                        <td class="place" id="14-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-15">
+                    <tr>
+                        <td id="15-1" class="seed-col">15</td>
+                        <td class="heat-number" rowspan="4">15</td>
+                        <td class="name" id="15-1-n" colspan="3">Tyron Knight</td>
+                        <td class="place" id="15-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="15-2" class="seed-col">47</td>
+                        <td class="name" id="15-2-n" colspan="3">Rachel Bruskoff</td>
+                        <td class="place" id="15-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="15-3" class="seed-col">50</td>
+                        <td class="name" id="15-3-n" colspan="3">Grace Wong</td>
+                        <td class="place" id="15-3-p">4</td>
+                    </tr>
+                    <tr>
+                        <td id="15-4" class="seed-col">18</td>
+                        <td class="name" id="15-4-n" colspan="3">Ryan Luiten</td>
+                        <td class="place" id="15-4-p">2</td>
+                    </tr>
+                </table>
+                <table id="col-1-heat-16">
+                    <tr>
+                        <td id="16-1" class="seed-col">2</td>
+                        <td class="heat-number" rowspan="4">16</td>
+                        <td class="name" id="16-1-n" colspan="3">James Kelly</td>
+                        <td class="place" id="16-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td id="16-2" class="seed-col">31</td>
+                        <td class="name" id="16-2-n" colspan="3">Levi Hawken</td>
+                        <td class="place" id="16-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td id="16-3" class="seed-col">34</td>
+                        <td class="name" id="16-3-n" colspan="3">Jack Mulholland</td>
+                        <td class="place" id="16-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td id="16-4" class="seed-col">
+                        </td>
+                        <td class="name" id="16-4-n" colspan="3">
+                        </td>
+                        <td class="place" id="16-4-p">
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script>
-    var socket = io();
+            <div class="col-2">
+                <table id="col-2-heat-17" class="top-table">
+                    <tr>
+                        <td class="heat-number" rowspan="4">17</td>
+                        <td class="name" id="17-1-n" colspan="3">Brennan Bast</td>
+                        <td class="place" id="17-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="17-2-n" colspan="3">Matt Boortman</td>
+                        <td class="place" id="17-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="17-3-n" colspan="3">Anton Lindén</td>
+                        <td class="place" id="17-3-p">DNF</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="17-4-n" colspan="3">Stephen Davis</td>
+                        <td class="place" id="17-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-18">
+                    <tr>
+                        <td class="heat-number" rowspan="4">18</td>
+                        <td class="name" id="18-1-n" colspan="3">Troy Pembeton</td>
+                        <td class="place" id="18-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="18-2-n" colspan="3">Tony Graves</td>
+                        <td class="place" id="18-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="18-3-n" colspan="3">Nicholas Rosa</td>
+                        <td class="place" id="18-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="18-4-n" colspan="3">P Barbosa</td>
+                        <td class="place" id="18-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-19">
+                    <tr>
+                        <td class="heat-number" rowspan="4">19</td>
+                        <td class="name" id="19-1-n" colspan="3">Robert McWhinnie</td>
+                        <td class="place" id="19-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="19-2-n" colspan="3">Luke Job</td>
+                        <td class="place" id="19-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="19-3-n" colspan="3">Daniel Guzzardi</td>
+                        <td class="place" id="19-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="19-4-n" colspan="3">Gerard Dombroski</td>
+                        <td class="place" id="19-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-20">
+                    <tr>
+                        <td class="heat-number" rowspan="4">20</td>
+                        <td class="name" id="20-1-n" colspan="3">Connor Ferguson</td>
+                        <td class="place" id="20-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="20-2-n" colspan="3">Winston Fox</td>
+                        <td class="place" id="20-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="20-3-n" colspan="3">Cameron Hancock</td>
+                        <td class="place" id="20-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="20-4-n" colspan="3">Jack Tumai</td>
+                        <td class="place" id="20-4-p">4</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-21">
+                    <tr>
+                        <td class="heat-number" rowspan="4">21</td>
+                        <td class="name" id="21-1-n" colspan="3">Kaimana Pinto</td>
+                        <td class="place" id="21-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="21-2-n" colspan="3">Byron Essert</td>
+                        <td class="place" id="21-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="21-3-n" colspan="3">Callum Mathieson</td>
+                        <td class="place" id="21-3-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="21-4-n" colspan="3">Paddy Howard</td>
+                        <td class="place" id="21-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-22">
+                    <tr>
+                        <td class="heat-number" rowspan="4">22</td>
+                        <td class="name" id="22-1-n" colspan="3">Mitch Thompson</td>
+                        <td class="place" id="22-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="22-2-n" colspan="3">Lawrence Thompson</td>
+                        <td class="place" id="22-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="22-3-n" colspan="3">Dan Waterhouse</td>
+                        <td class="place" id="22-3-p">DSQ</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="22-4-n" colspan="3">Jules Hornung</td>
+                        <td class="place" id="22-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-23">
+                    <tr>
+                        <td class="heat-number" rowspan="4">23</td>
+                        <td class="name" id="23-1-n" colspan="3">Dejan Djukic</td>
+                        <td class="place" id="23-1-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="23-2-n" colspan="3">Jimmy Riha</td>
+                        <td class="place" id="23-2-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="23-3-n" colspan="3">Tyler Howell</td>
+                        <td class="place" id="23-3-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="23-4-n" colspan="3">Callum O'Callaghan</td>
+                        <td class="place" id="23-4-p">2</td>
+                    </tr>
+                </table>
+                <table id="col-2-heat-24">
+                    <tr>
+                        <td class="heat-number" rowspan="4">24</td>
+                        <td class="name" id="24-1-n" colspan="3">James Kelly</td>
+                        <td class="place" id="24-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="24-2-n" colspan="3">Tyron Knight</td>
+                        <td class="place" id="24-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="24-3-n" colspan="3">Ryan Luiten</td>
+                        <td class="place" id="24-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="24-4-n" colspan="3">Jack Mulholland</td>
+                        <td class="place" id="24-4-p">4</td>
+                    </tr>
+                </table>
+            </div>
 
-    socket.on('message', function(msg){
-      console.log(msg);
-      document.getElementById("message").innerHTML = msg;
-    });
-  </script>
+            <div class="col-3">
+                <table id="col-3-heat-25" class="top-table">
+                    <tr>
+                        <td class="heat-number" rowspan="4">25</td>
+                        <td class="name" id="25-1-n" colspan="3">Brennan Bast</td>
+                        <td class="place" id="25-1-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="25-2-n" colspan="3">Troy Pembeton</td>
+                        <td class="place" id="25-2-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="25-3-n" colspan="3">Tony Graves</td>
+                        <td class="place" id="25-3-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="25-4-n" colspan="3">Matt Boortman</td>
+                        <td class="place" id="25-4-p">2</td>
+                    </tr>
+                </table>
+                <table id="col-3-heat-26">
+                    <tr>
+                        <td class="heat-number" rowspan="4">26</td>
+                        <td class="name" id="26-1-n" colspan="3">Connor Ferguson</td>
+                        <td class="place" id="26-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="26-2-n" colspan="3">Robert McWhinnie</td>
+                        <td class="place" id="26-2-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="26-3-n" colspan="3">Winston Fox</td>
+                        <td class="place" id="26-3-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="26-4-n" colspan="3">Luke Job</td>
+                        <td class="place" id="26-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-3-heat-27">
+                    <tr>
+                        <td class="heat-number" rowspan="4">27</td>
+                        <td class="name" id="27-1-n" colspan="3">Mitch Thompson</td>
+                        <td class="place" id="27-1-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="27-2-n" colspan="3">Kaimana Pinto</td>
+                        <td class="place" id="27-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="27-3-n" colspan="3">Lawrence Thompson</td>
+                        <td class="place" id="27-3-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="27-4-n" colspan="3">Byron Essert</td>
+                        <td class="place" id="27-4-p">1</td>
+                    </tr>
+                </table>
+                <table id="col-3-heat-28">
+                    <tr>
+                        <td class="heat-number" rowspan="4">28</td>
+                        <td class="name" id="28-1-n" colspan="3">James Kelly</td>
+                        <td class="place" id="28-1-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="28-2-n" colspan="3">Tyron Knight</td>
+                        <td class="place" id="28-2-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="28-3-n" colspan="3">Tyler Howell</td>
+                        <td class="place" id="28-3-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="28-4-n" colspan="3">Callum O'Callaghan</td>
+                        <td class="place" id="28-4-p">4</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <table id="col-4-heat-29" class="top-table">
+                    <tr>
+                        <td class="heat-number" rowspan="4">29</td>
+                        <td class="name" id="29-1-n" colspan="3">Connor Ferguson</td>
+                        <td class="place" id="29-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="29-2-n" colspan="3">Tony Graves</td>
+                        <td class="place" id="29-2-p">2</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="29-3-n" colspan="3">Winston Fox</td>
+                        <td class="place" id="29-3-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="29-4-n" colspan="3">Matt Boortman</td>
+                        <td class="place" id="29-4-p">3</td>
+                    </tr>
+                </table>
+                <table id="col-4-heat-30">
+                    <tr>
+                        <td class="heat-number" rowspan="4">30</td>
+                        <td class="name" id="30-1-n" colspan="3">James Kelly</td>
+                        <td class="place" id="30-1-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="30-2-n" colspan="3">Kaimana Pinto</td>
+                        <td class="place" id="30-2-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="30-3-n" colspan="3">Tyler Howell</td>
+                        <td class="place" id="30-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="30-4-n" colspan="3">Byron Essert</td>
+                        <td class="place" id="30-4-p">2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-5">
+                <table id="col-5-heat-31" class="top-table">
+                    <tr>
+                        <td class="heat-number" rowspan="4">31</td>
+                        <td class="name" id="31-1-n" colspan="3">Winston Fox</td>
+                        <td class="place" id="31-1-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="31-2-n" colspan="3">Matt Boortman</td>
+                        <td class="place" id="31-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="31-3-n" colspan="3">Kaimana Pinto</td>
+                        <td class="place" id="31-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="31-4-n" colspan="3">Tyler Howell</td>
+                        <td class="place" id="31-4-p">2</td>
+                    </tr>
+                </table>
+                <table id="col-5-heat-32">
+                    <tr>
+                        <td class="heat-number" rowspan="4">32</td>
+                        <td class="name" id="32-1-n" colspan="3">James Kelly</td>
+                        <td class="place" id="32-1-p">4</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="32-2-n" colspan="3">Connor Ferguson</td>
+                        <td class="place" id="32-2-p">1</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="32-3-n" colspan="3">Tony Graves</td>
+                        <td class="place" id="32-3-p">3</td>
+                    </tr>
+                    <tr>
+                        <td class="name" id="32-4-n" colspan="3">Byron Essert</td>
+                        <td class="place" id="32-4-p">2</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="jquery-2.1.3.js"></script>
+<script src="bracket-scripts.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+
+    // listener for push updates
+    socket.on('update', function(msg){
+      new UpdateBrackets(msg)
+    });
+</script>
+<script>
+
+$( document ).ready(function() {
+	new GenerateCss(64,4,32,5);
+	new UpdateBrackets('{ "1-1-n":"Test Input" , "1-1-p":"9" }')
+});
+
+</script>

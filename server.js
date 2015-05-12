@@ -1,11 +1,15 @@
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var bodyParser = require('body-parser');
 var multer = require('multer'); 
+var fs = require('fs');
 
 app.use(bodyParser.json()); // for parsing application/json
+app.use(express.static(__dirname + '/')); // for using static css, js files, etc.
 
+// Runs when receiving a GET (i.e. from browser)
 app.get('/', function(req, res){
 
   //send the index.html file for all requests
@@ -13,32 +17,30 @@ app.get('/', function(req, res){
 
 });
 
-app.post('/', function(req, res) {
+// Runs when a POST is received at:  [base url]/bracket/html/
+app.post('/bracket/html/', function(req, res) {
 
-    //var pushMsg = req.body.pushText;
-    io.emit('message', req.body.text);
-    console.log (req.body);
+    // overwrite index.html with text from received json
+    fs.writeFile('index.html', req.body.html, function(err) {
+        if(err) return console.log(err);
+    });
+    res.send(""); // send empty string for response
+
+});
+
+// Runs when a POST is received at: [base url]/bracket/update/
+app.post('/bracket/update/', function(req, res) {
+
+    // send a named push event to any listeners
+    // name: 'update'
+    // content: whatever was in the received json with name = 'update'
+    // This will get received by the index.html javascript
+    io.emit('update', req.body.update);
     res.send("");
 
 });
 
-http.listen(80);
+http.listen(80); //start listening on port 80
 
 console.log('listening on *:80');
 
-/*
-
-//for testing, we're just going to send data to the client every second
-setInterval( function() {
-
-  
-   // our message we want to send to the client: in this case it's just a random
-   // number that we generate on the server
-  
-  var msg = Math.random();
-  io.emit('message', msg);
-  console.log (msg);
-
-}, 1000);
-
-*/
