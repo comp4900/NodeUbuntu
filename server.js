@@ -85,7 +85,7 @@ app.get('/reports', function(req, res){
 		html += '<h5>Bracket:</h5>'
 		html +='<ul>\n';
 		for (var i=0; i < bracket.length; i++) {		
-			html += '<li><a href="http://localhost/push/' + bracket[i] + '">' 
+			html += '<li><a href="../push/' + bracket[i] + '">' 
 			+ (bracket[i].substring(0,bracket[i].indexOf("."))).replace(/[0-9]|_/g,' ').capitalize()+'</a></li>\n';	
 		}
 		html +='</ul>';
@@ -94,7 +94,7 @@ app.get('/reports', function(req, res){
 		html += '<h5>Qualification:</h5>'
 		html +='<ul>\n';
 		for (var i=0; i < qualification.length; i++) {		
-			html += '<li><a href="http://localhost/push/' + qualification[i] + '">'
+			html += '<li><a href="../push/' + qualification[i] + '">'
 			+ (qualification[i].substring(0,qualification[i].indexOf("."))).replace(/[0-9]|_/g,' ').capitalize()+'</a></li>\n';	
 		}
 		html +='</ul>';
@@ -103,7 +103,7 @@ app.get('/reports', function(req, res){
 		html += '<h5>Situation:</h5>'
 		html +='<ul>\n';
 		 for (var i=0; i < situation.length; i++) {		
-			html += '<li><a href="http://localhost/push/' + situation[i] + '">'
+			html += '<li><a href="../push/' + situation[i] + '">'
 			+ (situation[i].substring(0,situation[i].indexOf("."))).replace(/[0-9]|_/g,' ').capitalize() + '</a></li>\n';	
 		}
 		html +='</ul>';
